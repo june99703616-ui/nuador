@@ -1,0 +1,17 @@
+# Harness / tooling metadata
+.dsh-migrate/
+
+# Design artifacts (not part of the live site)
+style-preview.html
+
+# Local secrets for wrangler (never commit real keys)
+.dev.vars
+.env
+
+# Node / wrangler tooling
+node_modules/
+.wrangler/
+
+# OS / editor
+.DS_Store
+Thumbs.db
