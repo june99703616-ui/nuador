@@ -2,6 +2,20 @@
 (function () {
   "use strict";
 
+  var lang = (document.documentElement.lang || "en").slice(0, 2).toLowerCase();
+  var isJa = lang === "ja";
+  var T = {
+    countAll: isJa ? "ブレンド" : "blends",
+    countShown: isJa ? "ブレンドを表示" : "blends shown",
+    countNote: isJa ? "ニコチン・タバコ不使用" : "nicotine-free & tobacco-free",
+    fill: isJa ? "お名前、メールアドレス、メッセージをご入力ください。" : "Please fill in your name, email and message.",
+    sending: isJa ? "送信中…" : "Sending…",
+    send: isJa ? "送信する" : "Send Message",
+    success: isJa ? "ありがとうございます。送信しました。2営業日以内にお返事します。" : "Thank you — your message has been sent. We'll reply within two business days.",
+    error: isJa ? "送信できませんでした。hello@nuador.com まで直接ご連絡ください。" : "Something went wrong. Please email hello@nuador.com directly.",
+    network: isJa ? "通信エラーです。hello@nuador.com まで直接ご連絡ください。" : "Network error. Please email hello@nuador.com directly."
+  };
+
   /* ---- Sticky header state ---- */
   var header = document.getElementById("header");
   var onScroll = function () {
@@ -48,7 +62,7 @@
         if (show) visible++;
       });
       if (count) {
-        count.textContent = visible + (visible === total ? " blends" : " blends shown") + " · nicotine-free & tobacco-free";
+        count.textContent = visible + (visible === total ? " " + T.countAll : " " + T.countShown) + " · " + T.countNote;
       }
     });
   }
@@ -67,13 +81,13 @@
       var message = (fd.get("message") || "").toString().trim();
 
       if (!name || !email || !message) {
-        status.textContent = "Please fill in your name, email and message.";
+        status.textContent = T.fill;
         status.style.color = "#e08c7c";
         return;
       }
 
       btn.disabled = true;
-      btn.textContent = "Sending…";
+      btn.textContent = T.sending;
       status.textContent = "";
       status.style.color = "";
 
@@ -85,20 +99,20 @@
         .then(function (r) { return r.json().catch(function () { return { ok: false }; }); })
         .then(function (d) {
           btn.disabled = false;
-          btn.textContent = "Send Message";
+          btn.textContent = T.send;
           if (d && d.ok) {
-            status.textContent = "Thank you — your message has been sent. We'll reply within two business days.";
+            status.textContent = T.success;
             status.style.color = "#a9d6a0";
             form.reset();
           } else {
-            status.textContent = (d && d.error) || "Something went wrong. Please email hello@nuador.com directly.";
+            status.textContent = (d && d.error) || T.error;
             status.style.color = "#e08c7c";
           }
         })
         .catch(function () {
           btn.disabled = false;
-          btn.textContent = "Send Message";
-          status.textContent = "Network error. Please email hello@nuador.com directly.";
+          btn.textContent = T.send;
+          status.textContent = T.network;
           status.style.color = "#e08c7c";
         });
     });

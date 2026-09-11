@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Collection — Nuador · Nicotine-Free Hookah Paste</title>
-<meta name="description" content="Browse the full Nuador collection of nicotine-free hookah paste blends — fruit, tea, exotic and cool.">
+<meta name="description" content="Browse the full Nuador collection of nicotine-free hookah paste blends — fruit, tea and coffee.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
@@ -30,6 +30,7 @@
       <a href="catalog.html" class="active">Collection</a>
       <a href="index.html#contact">Contact</a>
       <a href="index.html#contact" class="nav-cta">Get in Touch</a>
+      <span class="lang-switch"><a href="catalog.html" class="on">EN</a><a href="ja/catalog.html">日本語</a></span>
     </nav>
     <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -41,7 +42,7 @@
   <div class="wrap">
     <div class="kicker">The Collection</div>
     <h1>Every blend,<br><em>composed like a perfume.</em></h1>
-    <p>Twenty nicotine-free, tobacco-free pastes across four families. Select a family to filter, or browse the full collection.</p>
+    <p>Eight nicotine-free, tobacco-free pastes across three families — fruit, tea and coffee. Select a family to filter, or browse the full collection.</p>
   </div>
 </section>
 
@@ -50,9 +51,9 @@
   <div class="wrap">
     <div class="filters" id="filters">
       <button class="on" data-filter="all">All</button>
-      <button data-filter="fruit">Fruit · 水果</button>
-      <button data-filter="tea">Tea · 茶</button>
-      <button data-filter="exotic">Exotic &amp; Cool · 混合/清凉</button>
+      <button data-filter="fruit">Fruit</button>
+      <button data-filter="tea">Tea</button>
+      <button data-filter="coffee">Coffee &amp; More</button>
     </div>
 
     <div class="grid" id="grid">
@@ -60,151 +61,67 @@
       <!-- FRUIT -->
       <div class="tile" data-cat="fruit">
         <div class="top"><span class="cat">Fruit</span></div>
-        <div class="emoji">🍑</div>
-        <h3>Pêche Blanche</h3><div class="cn">白桃 · White Peach</div>
-        <p class="note">Juicy white peach, velvety and bright. A house favourite.</p>
-        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="size">250 g</span></div>
-      </div>
-      <div class="tile" data-cat="fruit">
-        <div class="top"><span class="cat">Fruit</span></div>
-        <div class="emoji">🍇</div>
-        <h3>Raisin Vert</h3><div class="cn">青提 · Green Grape</div>
-        <p class="note">Crisp, dew-fresh green grape with a clean finish.</p>
+        <img class="thumb" src="data/apple.webp" alt="Apple flavoured hookah paste" loading="lazy">
+        <h3>Pomme</h3>
+        <p class="note">Crisp red apple, sweet with a bright, clean finish.</p>
         <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="size">250 g</span></div>
       </div>
       <div class="tile" data-cat="fruit">
         <div class="top"><span class="cat">Fruit</span></div>
-        <div class="emoji">🧡</div>
-        <h3>Fruit de la Passion</h3><div class="cn">百香果 · Passion Fruit</div>
-        <p class="note">Tropical passion fruit — tangy, exotic, full of sunshine.</p>
+        <img class="thumb" src="data/mango.webp" alt="Mango flavoured hookah paste" loading="lazy">
+        <h3>Mangue</h3>
+        <p class="note">Ripe, honeyed mango — lush and tropical.</p>
         <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="size">250 g</span></div>
       </div>
       <div class="tile" data-cat="fruit">
         <div class="top"><span class="cat">Fruit</span></div>
-        <div class="emoji">🥭</div>
-        <h3>Mangue Royale</h3><div class="cn">芒果 · Royal Mango</div>
-        <p class="note">Ripe Alphonso mango, honeyed and generous.</p>
+        <img class="thumb" src="data/Mixed-Fruit.webp" alt="Mixed fruit flavoured hookah paste" loading="lazy">
+        <h3>Fruits Mélangés</h3>
+        <p class="note">A juicy medley of orchard fruits, layered and bright.</p>
         <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="size">250 g</span></div>
-      </div>
-      <div class="tile" data-cat="fruit">
-        <div class="top"><span class="cat">Fruit</span></div>
-        <div class="emoji">🍉</div>
-        <h3>Pastèque Glacée</h3><div class="cn">冰镇西瓜 · Iced Watermelon</div>
-        <p class="note">Watermelon pulp on ice — light, cooling, summery.</p>
-        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="size">250 g</span></div>
-      </div>
-      <div class="tile" data-cat="fruit">
-        <div class="top"><span class="cat">Fruit</span></div>
-        <div class="emoji">🍓</div>
-        <h3>Framboise</h3><div class="cn">覆盆子 · Raspberry</div>
-        <p class="note">Tart-sweet raspberry with a jammy heart.</p>
-        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="size">250 g</span></div>
-      </div>
-      <div class="tile" data-cat="fruit">
-        <div class="top"><span class="cat">Fruit</span></div>
-        <div class="emoji">🫐</div>
-        <h3>Cassis Noir</h3><div class="cn">黑加仑 · Blackcurrant</div>
-        <p class="note">Deep blackcurrant, dark and slightly tannic.</p>
-        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="size">250 g</span></div>
-      </div>
-      <div class="tile" data-cat="fruit">
-        <div class="top"><span class="cat">Fruit</span></div>
-        <div class="emoji">🍋</div>
-        <h3>Citron Vert</h3><div class="cn">青柠 · Lime</div>
-        <p class="note">Zesty lime zest with a sparkling citrus lift.</p>
-        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="size">250 g</span></div>
       </div>
 
       <!-- TEA -->
       <div class="tile" data-cat="tea">
         <div class="top"><span class="cat">Tea</span></div>
-        <div class="emoji">🍃</div>
-        <h3>Longjing</h3><div class="cn">龙井 · Dragon Well</div>
-        <p class="note">Toasted, vegetal green tea. Calm and lingering.</p>
+        <img class="thumb" src="data/green-tea.webp" alt="Green tea flavoured hookah paste" loading="lazy">
+        <h3>Thé Vert</h3>
+        <p class="note">Toasted green tea, calm and gently vegetal.</p>
         <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="size">250 g</span></div>
       </div>
       <div class="tile" data-cat="tea">
         <div class="top"><span class="cat">Tea</span></div>
-        <div class="emoji">🍂</div>
-        <h3>Lapsang Souchong</h3><div class="cn">正山小种 · Smoked Black Tea</div>
-        <p class="note">Smoky pinewood black tea — bold and mysterious.</p>
-        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="size">250 g</span></div>
-      </div>
-      <div class="tile" data-cat="tea">
-        <div class="top"><span class="cat">Tea</span></div>
-        <div class="emoji">🍵</div>
-        <h3>Pêche-Oolong</h3><div class="cn">蜜桃乌龙 · Peach Oolong</div>
-        <p class="note">Floral oolong folded into ripe peach.</p>
-        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="size">250 g</span></div>
-      </div>
-      <div class="tile" data-cat="tea">
-        <div class="top"><span class="cat">Tea</span></div>
-        <div class="emoji">🌼</div>
-        <h3>Osmanthus</h3><div class="cn">桂花 · Osmanthus</div>
-        <p class="note">Delicate apricot-blossom sweetness, airy and refined.</p>
+        <img class="thumb" src="data/Jasmine-tea.webp" alt="Jasmine tea flavoured hookah paste" loading="lazy">
+        <h3>Thé au Jasmin</h3>
+        <p class="note">Fragrant jasmine blossoms over soft green tea.</p>
         <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="size">250 g</span></div>
       </div>
       <div class="tile" data-cat="tea">
         <div class="top"><span class="cat">Tea</span></div>
-        <div class="emoji">🫖</div>
-        <h3>Earl Grey Impérial</h3><div class="cn">伯爵茶 · Earl Grey</div>
-        <p class="note">Bergamot-laced black tea — elegant and aromatic.</p>
+        <img class="thumb" src="data/lemon-tea.webp" alt="Lemon tea flavoured hookah paste" loading="lazy">
+        <h3>Thé Citron</h3>
+        <p class="note">Zesty lemon folded into smooth black tea.</p>
         <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="size">250 g</span></div>
       </div>
 
-      <!-- EXOTIC & COOL -->
-      <div class="tile" data-cat="exotic">
-        <div class="top"><span class="cat">Cool</span></div>
-        <div class="emoji">❄️</div>
-        <h3>Menthe Glaciale</h3><div class="cn">冰爽薄荷 · Icy Mint</div>
-        <p class="note">A crisp cooling mint that clears the palate.</p>
-        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="size">250 g</span></div>
-      </div>
-      <div class="tile" data-cat="exotic">
-        <div class="top"><span class="cat">Exotic</span></div>
-        <div class="emoji">🌰</div>
-        <h3>Vanille Bourbon</h3><div class="cn">波旁香草 · Bourbon Vanilla</div>
-        <p class="note">Creamy Madagascar vanilla, warm and comforting.</p>
-        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="size">250 g</span></div>
-      </div>
-      <div class="tile" data-cat="exotic">
-        <div class="top"><span class="cat">Exotic</span></div>
-        <div class="emoji">☕</div>
-        <h3>Café Noir</h3><div class="cn">黑咖啡 · Black Coffee</div>
-        <p class="note">Dark-roast espresso with a whisper of cocoa.</p>
-        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="size">250 g</span></div>
-      </div>
-      <div class="tile" data-cat="exotic">
-        <div class="top"><span class="cat">Exotic</span></div>
-        <div class="emoji">🪵</div>
-        <h3>Ambre Boisé</h3><div class="cn">木质琥珀 · Woody Amber</div>
-        <p class="note">Warm amber over smooth sandalwood.</p>
-        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="size">250 g</span></div>
-      </div>
-      <div class="tile" data-cat="exotic">
-        <div class="top"><span class="cat">Exotic</span></div>
-        <div class="emoji">🌲</div>
-        <h3>Cèdre</h3><div class="cn">雪松 · Cedar</div>
-        <p class="note">Fresh-cut cedarwood — the signature of the maison.</p>
+      <!-- COFFEE & MORE -->
+      <div class="tile" data-cat="coffee">
+        <div class="top"><span class="cat">Coffee</span></div>
+        <img class="thumb" src="data/black-coffee.webp" alt="Black coffee flavoured hookah paste" loading="lazy">
+        <h3>Café Noir</h3>
+        <p class="note">Dark-roast coffee with a whisper of cocoa.</p>
         <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="size">250 g</span></div>
       </div>
-      <div class="tile" data-cat="exotic">
-        <div class="top"><span class="cat">Exotic</span></div>
-        <div class="emoji">🍊</div>
-        <h3>Fleur d'Oranger</h3><div class="cn">橙花 · Orange Blossom</div>
-        <p class="note">Sunlit neroli and orange blossom — luminous.</p>
-        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="size">250 g</span></div>
-      </div>
-      <div class="tile" data-cat="exotic">
-        <div class="top"><span class="cat">Exotic</span></div>
-        <div class="emoji">🍯</div>
-        <h3>Gingembre &amp; Miel</h3><div class="cn">姜蜜 · Ginger &amp; Honey</div>
-        <p class="note">Spiced ginger softened by golden honey.</p>
+      <div class="tile" data-cat="coffee">
+        <div class="top"><span class="cat">Coffee</span></div>
+        <img class="thumb" src="data/Cappuccino.webp" alt="Cappuccino flavoured hookah paste" loading="lazy">
+        <h3>Cappuccino</h3>
+        <p class="note">Creamy milk foam over rich espresso.</p>
         <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="size">250 g</span></div>
       </div>
 
     </div>
-    <p class="count-hint" id="count">20 blends · nicotine-free &amp; tobacco-free</p>
+    <p class="count-hint" id="count">8 blends · nicotine-free &amp; tobacco-free</p>
   </div>
 </section>
 
@@ -214,7 +131,7 @@
     <div class="foot-grid">
       <div class="foot-brand">
         <div class="name">NUADOR<span>.</span></div>
-        <p>French maison crafting nicotine-free, tobacco-free hookah paste. Fruit, tea and botanical blends for a cleaner ritual.</p>
+        <p>French maison crafting nicotine-free, tobacco-free hookah paste. Fruit, tea and coffee blends for a cleaner ritual.</p>
       </div>
       <div>
         <h4>Explore</h4>
@@ -232,7 +149,7 @@
     </div>
     <div class="foot-bottom">
       <span>© 2025 Nuador · Paris. All rights reserved. Nicotine-free &amp; tobacco-free product.</span>
-      <span class="langs"><span class="on">EN</span><span title="Japanese version — coming soon">日本語</span></span>
+      <span class="langs"><a href="catalog.html" class="on">EN</a><a href="ja/catalog.html">日本語</a></span>
     </div>
   </div>
 </footer>
