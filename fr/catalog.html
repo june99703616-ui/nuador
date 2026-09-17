@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Collection — Nuador · Pâte à chicha sans nicotine</title>
+<meta name="description" content="Parcourez la collection Nuador de pâte à chicha sans nicotine — fruits, thé et café.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230e0a16'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='%23e2c180' font-family='Georgia'>N</text></svg>">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header id="header">
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <span class="mark"></span>
+      <span>
+        <span class="name">NUADOR</span>
+        <span class="sub">Paris · Sans nicotine</span>
+      </span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Accueil</a>
+      <a href="index.html#maison">Maison</a>
+      <a href="index.html#flavours">Saveurs</a>
+      <a href="catalog.html" class="active">Collection</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#contact" class="nav-cta">Nous contacter</a>
+      <span class="lang-switch"><a href="../catalog.html">EN</a><a href="../ja/catalog.html">日本語</a><a href="catalog.html" class="on" title="Français">FR</a><a href="../ms/catalog.html" title="Bahasa Melayu">MS</a></span>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div class="kicker">La Collection</div>
+    <h1>Chaque mélange,<br><em>composé comme un parfum.</em></h1>
+    <p>Huit pâtes sans nicotine et sans tabac, en trois familles — fruits, thé et café. Choisissez une famille pour filtrer, ou parcourez toute la collection.</p>
+  </div>
+</section>
+
+<!-- ============ CATALOG ============ -->
+<section style="padding:0 0 120px">
+  <div class="wrap">
+    <div class="filters" id="filters">
+      <button class="on" data-filter="all">Tout</button>
+      <button data-filter="fruit">Fruits</button>
+      <button data-filter="tea">Thé</button>
+      <button data-filter="coffee">Café &amp; plus</button>
+    </div>
+
+    <div class="grid" id="grid">
+
+      <!-- FRUIT -->
+      <div class="tile" data-cat="fruit">
+        <div class="top"><span class="cat">Fruits</span></div>
+        <img class="thumb" src="../data/apple.webp" alt="Pâte à chicha saveur pomme" loading="lazy">
+        <h3>Pomme</h3>
+        <p class="note">Pomme rouge croquante, douce avec une finale lumineuse.</p>
+        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="size">250 g</span></div>
+      </div>
+      <div class="tile" data-cat="fruit">
+        <div class="top"><span class="cat">Fruits</span></div>
+        <img class="thumb" src="../data/mango.webp" alt="Pâte à chicha saveur mangue" loading="lazy">
+        <h3>Mangue</h3>
+        <p class="note">Mangue mûre et mielleuse — riche et tropicale.</p>
+        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="size">250 g</span></div>
+      </div>
+      <div class="tile" data-cat="fruit">
+        <div class="top"><span class="cat">Fruits</span></div>
+        <img class="thumb" src="../data/Mixed-Fruit.webp" alt="Pâte à chicha saveur fruits mélangés" loading="lazy">
+        <h3>Fruits Mélangés</h3>
+        <p class="note">Un mélange juteux de fruits du verger, lumineux.</p>
+        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="size">250 g</span></div>
+      </div>
+
+      <!-- TEA -->
+      <div class="tile" data-cat="tea">
+        <div class="top"><span class="cat">Thé</span></div>
+        <img class="thumb" src="../data/green-tea.webp" alt="Pâte à chicha saveur thé vert" loading="lazy">
+        <h3>Thé Vert</h3>
+        <p class="note">Thé vert torréfié, calme et délicatement végétal.</p>
+        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="size">250 g</span></div>
+      </div>
+      <div class="tile" data-cat="tea">
+        <div class="top"><span class="cat">Thé</span></div>
+        <img class="thumb" src="../data/Jasmine-tea.webp" alt="Pâte à chicha saveur thé au jasmin" loading="lazy">
+        <h3>Thé au Jasmin</h3>
+        <p class="note">Fleurs de jasmin parfumées sur un thé vert délicat.</p>
+        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="size">250 g</span></div>
+      </div>
+      <div class="tile" data-cat="tea">
+        <div class="top"><span class="cat">Thé</span></div>
+        <img class="thumb" src="../data/lemon-tea.webp" alt="Pâte à chicha saveur thé au citron" loading="lazy">
+        <h3>Thé Citron</h3>
+        <p class="note">Citron zesté mêlé à un thé noir velouté.</p>
+        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i></i><i></i></span><span class="size">250 g</span></div>
+      </div>
+
+      <!-- COFFEE & MORE -->
+      <div class="tile" data-cat="coffee">
+        <div class="top"><span class="cat">Café</span></div>
+        <img class="thumb" src="../data/black-coffee.webp" alt="Pâte à chicha saveur café noir" loading="lazy">
+        <h3>Café Noir</h3>
+        <p class="note">Café torréfié sombre, avec une pointe de cacao.</p>
+        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="size">250 g</span></div>
+      </div>
+      <div class="tile" data-cat="coffee">
+        <div class="top"><span class="cat">Café</span></div>
+        <img class="thumb" src="../data/Cappuccino.webp" alt="Pâte à chicha saveur cappuccino" loading="lazy">
+        <h3>Cappuccino</h3>
+        <p class="note">Mousse de lait onctueuse sur un espresso intense.</p>
+        <div class="foot"><span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="size">250 g</span></div>
+      </div>
+
+    </div>
+    <p class="count-hint" id="count">8 mélanges · sans nicotine &amp; sans tabac</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="name">NUADOR<span>.</span></div>
+        <p>Maison française qui élabore une pâte à chicha sans nicotine et sans tabac. Mélanges de fruits, de thé et de plantes pour un rituel plus pur.</p>
+      </div>
+      <div>
+        <h4>Explorer</h4>
+        <a href="index.html">Accueil</a>
+        <a href="index.html#maison">Maison</a>
+        <a href="catalog.html">Collection</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Mentions légales</h4>
+        <a href="#">Déclaration sans nicotine</a>
+        <a href="#">Réservé aux 18+</a>
+        <a href="#">Politique de confidentialité</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2025 Nuador · Paris. Tous droits réservés. Produit sans nicotine et sans tabac.</span>
+      <span class="langs"><a href="../catalog.html">EN</a><a href="../ja/catalog.html">日本語</a><a href="catalog.html" class="on">FR</a><a href="../ms/catalog.html">MS</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

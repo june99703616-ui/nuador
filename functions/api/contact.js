@@ -27,6 +27,9 @@ export async function onRequestPost({ request, env }) {
   const email = String(data?.email || "").trim();
   const topic = String(data?.topic || "").trim();
   const message = String(data?.message || "").trim();
+  const whatsapp = String(data?.whatsapp || "").trim();
+  const line = String(data?.line || "").trim();
+  const telegram = String(data?.telegram || "").trim();
 
   if (!name || !email || !message) {
     return json({ ok: false, error: "Please fill in your name, email and message." }, 400);
@@ -49,12 +52,20 @@ export async function onRequestPost({ request, env }) {
       to,
       reply_to: email,
       subject: `[Nuador] New enquiry from ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\nTopic: ${topic || "—"}\n\n${message}`,
+      text:
+        `Name: ${name}\nEmail: ${email}\nTopic: ${topic || "—"}\n` +
+        `${whatsapp ? `WhatsApp: ${whatsapp}\n` : ""}` +
+        `${line ? `LINE: ${line}\n` : ""}` +
+        `${telegram ? `Telegram: ${telegram}\n` : ""}` +
+        `\n${message}`,
       html:
         `<h3>New enquiry — Nuador</h3>` +
         `<p><b>Name:</b> ${esc(name)}</p>` +
         `<p><b>Email:</b> ${esc(email)}</p>` +
         `<p><b>Topic:</b> ${esc(topic || "—")}</p>` +
+        (whatsapp ? `<p><b>WhatsApp:</b> ${esc(whatsapp)}</p>` : "") +
+        (line ? `<p><b>LINE:</b> ${esc(line)}</p>` : "") +
+        (telegram ? `<p><b>Telegram:</b> ${esc(telegram)}</p>` : "") +
         `<p>${esc(message).replace(/\n/g, "<br>")}</p>`,
     }),
   });
