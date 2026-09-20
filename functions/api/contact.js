@@ -8,6 +8,10 @@
  *   FROM_EMAIL     — verified sender, e.g. "Nuador <onboarding@resend.dev>"
  */
 
+export async function onRequestGet() {
+  return json({ ok: true, service: "Nuador contact endpoint is live." });
+}
+
 export async function onRequestPost({ request, env }) {
   let data;
   const contentType = request.headers.get("content-type") || "";
