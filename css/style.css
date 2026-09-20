@@ -1,5 +1,5 @@
 /* ============================================================
-   NUADOR — Nicotine-Free Hookah Paste
+   NUADOR — Nicotine-Free Shisha Molasses
    Theme: "Luxury Dark"  (暗夜奢华)
    French maison · gold on near-black · refined smoke
    ============================================================ */
@@ -204,9 +204,23 @@ header.scrolled{background:rgba(8,6,13,.72);backdrop-filter:blur(14px);border-bo
 
 /* ---------- Scene / moments ---------- */
 .scene-media{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line-soft);box-shadow:0 30px 70px -30px rgba(0,0,0,.6)}
-.scene-media img{width:100%;aspect-ratio:16/7;object-fit:cover;display:block}
+.scene-media img{width:100%;max-height:72vh;object-fit:cover;display:block}
 .scene-ph{width:100%;aspect-ratio:16/7;display:grid;place-items:center;text-align:center;background:radial-gradient(120% 120% at 18% 0%,rgba(226,193,128,.16),transparent 52%),linear-gradient(160deg,var(--panel-2),var(--bg1));color:var(--faint);font-size:13px;letter-spacing:.22em;text-transform:uppercase;line-height:2.1}
 .scene-ph .ph-note{display:block;font-size:11px;opacity:.75;letter-spacing:.06em;text-transform:none;margin-top:4px}
+
+/* ---------- Banner ---------- */
+.banner{position:relative;overflow:hidden;display:flex;align-items:center;min-height:440px;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
+.banner-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.banner-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,6,13,.92) 0%,rgba(8,6,13,.6) 52%,rgba(8,6,13,.18) 100%)}
+.banner-inner{position:relative;z-index:2;max-width:620px;padding:72px 0}
+.banner-inner h2{font-family:var(--serif);font-weight:500;font-size:clamp(30px,3.6vw,48px);line-height:1.12;color:var(--cream);margin-top:18px}
+.banner-inner h2 em{font-style:italic;color:var(--gold)}
+.banner-inner p{margin:18px 0 30px;color:var(--muted);font-size:16px;max-width:480px}
+@media (max-width:760px){
+  .banner{min-height:340px}
+  .banner-overlay{background:linear-gradient(0deg,rgba(8,6,13,.9) 0%,rgba(8,6,13,.5) 62%,rgba(8,6,13,.25) 100%)}
+  .banner-inner{padding:52px 0}
+}
 
 /* ---------- Markets ---------- */
 .markets{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}

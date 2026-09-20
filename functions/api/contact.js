@@ -4,7 +4,7 @@
  *
  * Required environment variables (Cloudflare Pages → Settings → Environment variables):
  *   RESEND_API_KEY — Resend API key
- *   TO_EMAIL       — where enquiries are delivered, e.g. hello@nuador.com
+ *   TO_EMAIL       — where enquiries are delivered, e.g. info@nuador.co
  *   FROM_EMAIL     — verified sender, e.g. "Nuador <onboarding@resend.dev>"
  */
 
@@ -38,7 +38,7 @@ export async function onRequestPost({ request, env }) {
     return json({ ok: false, error: "Please enter a valid email address." }, 400);
   }
 
-  const to = env.TO_EMAIL || "hello@nuador.com";
+  const to = env.TO_EMAIL || "info@nuador.co";
   const from = env.FROM_EMAIL || "Nuador <onboarding@resend.dev>";
 
   const res = await fetch("https://api.resend.com/emails", {

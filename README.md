@@ -1,7 +1,7 @@
-# Nuador — Nicotine-Free Hookah Paste (Website)
+# Nuador — Nicotine-Free Shisha Molasses (Website)
 
 Static company site for **Nuador**, a French maison crafting nicotine-free,
-tobacco-free hookah paste. English version live; Japanese (`/ja`) planned.
+tobacco-free shisha molasses. English version live; Japanese (`/ja`) planned.
 
 ## Structure
 
@@ -44,14 +44,14 @@ Environment variables — set in **Cloudflare Pages → Settings → Environment
 | Variable        | Purpose                                    | Example                              |
 | --------------- | ------------------------------------------ | ------------------------------------ |
 | `RESEND_API_KEY`| Resend API key                             | `re_xxxxxxxx`                        |
-| `TO_EMAIL`      | Where enquiries are delivered              | `hello@nuador.com`                   |
+| `TO_EMAIL`      | Where enquiries are delivered              | `info@nuador.co`                   |
 | `FROM_EMAIL`    | Verified sender (must be allowed by Resend)| `Nuador <onboarding@resend.dev>`     |
 
 Resend notes:
 - For testing, the default `onboarding@resend.dev` sender works but only
   delivers to your own Resend account email.
 - For production, verify your sending domain (e.g. `nuador.com`) and set
-  `FROM_EMAIL` to e.g. `Nuador <hello@nuador.com>`.
+  `FROM_EMAIL` to e.g. `Nuador <info@nuador.co>`.
 
 > Never commit the API key — keep it in Cloudflare's environment variables
 > (or `.dev.vars`, which is git-ignored, for local `wrangler pages dev`).

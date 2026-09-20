@@ -9,32 +9,32 @@
       fill: "Please fill in your name, email and message.",
       sending: "Sending…", send: "Send Message",
       success: "Thank you — your message has been sent. We'll reply within two business days.",
-      error: "Something went wrong. Please email hello@nuador.com directly.",
-      network: "Network error. Please email hello@nuador.com directly."
+      error: "Something went wrong. Please email info@nuador.co directly.",
+      network: "Network error. Please email info@nuador.co directly."
     },
     ja: {
       countAll: "ブレンド", countShown: "ブレンドを表示", countNote: "ニコチン・タバコ不使用",
       fill: "お名前、メールアドレス、メッセージをご入力ください。",
       sending: "送信中…", send: "送信する",
       success: "ありがとうございます。送信しました。2営業日以内にお返事します。",
-      error: "送信できませんでした。hello@nuador.com まで直接ご連絡ください。",
-      network: "通信エラーです。hello@nuador.com まで直接ご連絡ください。"
+      error: "送信できませんでした。info@nuador.co まで直接ご連絡ください。",
+      network: "通信エラーです。info@nuador.co まで直接ご連絡ください。"
     },
     fr: {
       countAll: "mélanges", countShown: "mélanges affichés", countNote: "sans nicotine & sans tabac",
       fill: "Veuillez renseigner votre nom, votre e-mail et votre message.",
       sending: "Envoi…", send: "Envoyer",
       success: "Merci — votre message a bien été envoyé. Nous répondrons sous deux jours ouvrés.",
-      error: "Une erreur est survenue. Écrivez-nous directement à hello@nuador.com.",
-      network: "Erreur réseau. Écrivez-nous directement à hello@nuador.com."
+      error: "Une erreur est survenue. Écrivez-nous directement à info@nuador.co.",
+      network: "Erreur réseau. Écrivez-nous directement à info@nuador.co."
     },
     ms: {
       countAll: "perisa", countShown: "perisa dipaparkan", countNote: "bebas nikotin & bebas tembakau",
       fill: "Sila isi nama, e-mel dan mesej anda.",
       sending: "Menghantar…", send: "Hantar",
       success: "Terima kasih — mesej anda telah dihantar. Kami akan membalas dalam masa dua hari bekerja.",
-      error: "Ralat. Sila e-mel terus ke hello@nuador.com.",
-      network: "Ralat rangkaian. Sila e-mel terus ke hello@nuador.com."
+      error: "Ralat. Sila e-mel terus ke info@nuador.co.",
+      network: "Ralat rangkaian. Sila e-mel terus ke info@nuador.co."
     }
   };
   var T = MSG[lang] || MSG.en;
