@@ -312,6 +312,15 @@ footer{border-top:1px solid var(--line-soft);padding:60px 0 40px;background:var(
 .tile.hide{display:none}
 .count-hint{font-size:12.5px;color:var(--faint);letter-spacing:.08em;margin-top:34px;text-align:center}
 
+/* ---------- FAQ ---------- */
+.faq{max-width:840px}
+.faq details{border:1px solid var(--line-soft);border-radius:12px;background:var(--panel);margin-bottom:12px;padding:0 22px;overflow:hidden}
+.faq summary{cursor:pointer;list-style:none;padding:20px 0;font-family:var(--serif);font-size:18px;color:var(--cream);display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:24px;color:var(--gold);line-height:1;transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 20px;color:var(--muted);font-size:14.5px;line-height:1.7;max-width:740px}
+
 /* ---------- Reveal ---------- */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
 .reveal.in{opacity:1;transform:none}

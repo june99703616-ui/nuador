@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://nuador.co/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nuador.co/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nuador.co/ja/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nuador.co/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://nuador.co/ms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nuador.co/"/>
+  </url>
+  <url>
+    <loc>https://nuador.co/catalog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nuador.co/catalog.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nuador.co/ja/catalog.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nuador.co/fr/catalog.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://nuador.co/ms/catalog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nuador.co/catalog.html"/>
+  </url>
+  <url>
+    <loc>https://nuador.co/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nuador.co/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nuador.co/ja/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nuador.co/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://nuador.co/ms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nuador.co/"/>
+  </url>
+  <url>
+    <loc>https://nuador.co/ja/catalog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nuador.co/catalog.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nuador.co/ja/catalog.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nuador.co/fr/catalog.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://nuador.co/ms/catalog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nuador.co/catalog.html"/>
+  </url>
+  <url>
+    <loc>https://nuador.co/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nuador.co/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nuador.co/ja/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nuador.co/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://nuador.co/ms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nuador.co/"/>
+  </url>
+  <url>
+    <loc>https://nuador.co/fr/catalog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nuador.co/catalog.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nuador.co/ja/catalog.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nuador.co/fr/catalog.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://nuador.co/ms/catalog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nuador.co/catalog.html"/>
+  </url>
+  <url>
+    <loc>https://nuador.co/ms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nuador.co/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nuador.co/ja/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nuador.co/fr/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://nuador.co/ms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nuador.co/"/>
+  </url>
+  <url>
+    <loc>https://nuador.co/ms/catalog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://nuador.co/catalog.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://nuador.co/ja/catalog.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://nuador.co/fr/catalog.html"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://nuador.co/ms/catalog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://nuador.co/catalog.html"/>
+  </url>
+</urlset>
